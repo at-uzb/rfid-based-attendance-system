@@ -1,0 +1,92 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RFID Attendance System - Attendances</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'images/rf.png' %}">
+
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+    rel="stylesheet" 
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" 
+    crossorigin="anonymous">
+
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to right, #abc1ff, #73fffd);
+    }
+    
+    h1 {
+        color: #333;
+        text-align: center;
+    }
+    
+    table {
+        width: 100%;
+        max-width: 1000px;
+        margin: 20px auto;
+        border-collapse: collapse;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+
+    }
+    
+    th, td {
+        padding: 10px;
+        text-align: center;
+        width: 25%;
+    }
+    
+    th {
+        background-color: #007bff;
+        color: #fff;
+    }
+    
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+    
+    tr:hover {
+        background-color: #e0e0e0;
+        cursor: pointer;
+    }
+    .h1s{
+        margin-top: 150px;
+    }
+    </style>
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <h1 class="h1s">Attendances</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Student</th>
+                <th>Group</th>
+                <th>Room</th>
+                <th>Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for a in mydata %}
+            <tr>
+
+                <td>{{ a.RFID.name }} {{ a.RFID.surname }}</td>
+                <td>{{ a.RFID.group }}</td>
+
+                <td>{{ a.room_id.room_name }}</td>
+
+                <td>{{a.time_in}}</td>
+
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

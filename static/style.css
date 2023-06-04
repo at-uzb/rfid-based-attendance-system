@@ -1,0 +1,122 @@
+/* Reset default styles */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  background: linear-gradient(to right, #abc1ff, #73fffd);
+}
+
+/* Header styles */
+header {
+  background-color: #222;
+  padding: 20px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #007bff;
+}
+
+/* Hero section styles */
+.hero {
+  background-image: url(background.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 200px 0;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 24px;
+  margin-bottom: 40px;
+  font-weight: 300;
+}
+
+/* Features section styles */
+.features {
+  background-color: #fff;
+  padding: 80px 0;
+}
+
+.features h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #222;
+  font-size: 36px;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 60px; /* Increased margin for more space */
+}
+
+.feature img {
+  max-width: 100px;
+  margin-bottom: 30px;
+}
+
+.feature h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.feature p {
+  color: #555;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.features .container {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Footer styles */
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
