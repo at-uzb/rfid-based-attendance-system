@@ -47,4 +47,4 @@ This project is licensed under the [MIT License](LICENSE).
 - Thank you to the Django community for the amazing framework.
 - Special thanks to the contributors and maintainers of the dependencies used in this project.
 
-Feel free to reach out to us at [email@example.com](mailto:email@example.com) for any inquiries or support. Enjoy using our RFID-based Attendance Tracking System!
+Feel free to reach out to us at [tothebest2002@gmail.com](mailto:email@example.com) for any inquiries or support. Enjoy using our RFID-based Attendance Tracking System!
