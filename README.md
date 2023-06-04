@@ -14,17 +14,10 @@ This is an RFID-based attendance tracking system developed with Django. The syst
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/your/repo.git`
-2. Navigate to the project directory: `cd rfid-attendance-system`
-3. Create a virtual environment: `python -m venv venv`
-4. Activate the virtual environment:
-   - For Windows: `venv\Scripts\activate`
-   - For macOS/Linux: `source venv/bin/activate`
-5. Install the dependencies: `pip install -r requirements.txt`
-6. Set up the database:
-   - Update the database settings in `settings.py`
-   - Run migrations: `python manage.py migrate`
-7. Start the development server: `python manage.py runserver`
+1. Clone the repository: `git clone https://github.com/at-uzb/rfid-based-attendance-system.git`
+2. Navigate to the project directory: `cd rfid-based-attendance-system`
+3. Install the dependencies: `pip install -r requirements.txt`
+4. Start the development server: `python manage.py runserver`
 
 ## Usage
 
@@ -34,9 +27,6 @@ This is an RFID-based attendance tracking system developed with Django. The syst
 4. Monitor attendance records in real-time through the web-based interface.
 5. Generate custom attendance reports as needed.
 
-## Contributing
-
-Contributions are welcome! Please follow the guidelines in the `CONTRIBUTING.md` file.
 
 ## License
 
