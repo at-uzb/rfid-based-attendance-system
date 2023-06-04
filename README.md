@@ -18,6 +18,7 @@ This is an RFID-based attendance tracking system developed with Django. The syst
 2. Navigate to the project directory: `cd rfid-based-attendance-system`
 3. Install the dependencies: `pip install -r requirements.txt`
 4. Start the development server: `python manage.py runserver`
+5. Go to `http://127.0.0.1:8000/` link in your browser
 
 ## Usage
 
